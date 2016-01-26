@@ -1,154 +1,191 @@
-jQuery(document).ready(function(){
+jQuery(function($){
 
-	/* ---------------------------------------------------------------------- */
-	/*	Custom Functions
-	/* ---------------------------------------------------------------------- */
 
-	// Needed variables
-	var $logo 	= $('#logo');
+	/* ----------------------------------------------------------- */
+	/*  1. Mobile MENU
+	/* ----------------------------------------------------------- */
 
-	// Show logo
-	$('.tab-resume,.tab-portfolio,.tab-contact,.photo-gallary').click(function() {
-	  $logo.fadeIn('slow');
+    jQuery(".button-collapse").sideNav();
+    
+	/* ----------------------------------------------------------- */
+	/*  2. Experience SLider(Owl Carousel)
+	/* ----------------------------------------------------------- */
+
+	var owl = $("#owl-carousel"); 
+    owl.owlCarousel({
+        items : 4, //4 items above 1024px browser width
+        itemsDesktop : [1024,3], //3 items between 1024px and 901px
+        itemsDesktopSmall : [900,2], // betweem 900px and 601px
+        itemsTablet: [600,1], //1 items between 600 and 0
+        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
+    });
+    // Slide Navigation
+    jQuery(".next").click(function(){
+        owl.trigger('owl.next');
+    });
+
+    jQuery(".prev").click(function(){
+        owl.trigger('owl.prev');
+    });
+
+
+    /* ----------------------------------------------------------- */
+	/*  3. EDUCATION SLIDER (Owl Carousel)
+	/* ----------------------------------------------------------- */
+
+	var owl1 = $("#owl-carousel1"); 
+	owl1.owlCarousel({
+	    items : 4, //4 items above 1024px browser width
+	    itemsDesktop : [1024,3], //3 items between 1024px and 901px
+	    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+	    itemsTablet: [600,1], //1 items between 600 and 0
+	    itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
 	});
-	// Hide logo
-	$('.tab-profile').click(function() {
-	  $logo.fadeOut('slow');
-	});
-
-	/* ---------------------------------------------------------------------- */
-	/*	Menu
-	/* ---------------------------------------------------------------------- */
-
-	// Needed variables
-	var $content 		= $("#content");
-
-	// Run easytabs
-  	$content.easytabs({
-	  animate			: true,
-	  updateHash		: false,
-	  transitionIn		:'slideDown',
-	  transitionOut		:'slideUp',
-	  animationSpeed	:600,
-	  tabs				:"> .menu > ul > li",
-	  tabActiveClass	:'active',
-	});
-
-	// Hover menu effect
-	$content.find('.tabs li a').hover(
-		function() {
-			$(this).stop().animate({ marginTop: "-7px" }, 200);
-		},function(){
-			$(this).stop().animate({ marginTop: "0px" }, 300);
-		}
-	);
-	/* ---------------------------------------------------------------------- */
-	/*	Portfolio
-	/* ---------------------------------------------------------------------- */
-
-	// Needed variables
-	var $container	 	= $('#portfolio-list');
-	var $filter 		= $('#portfolio-filter');
-
-	// Run Isotope
-	$container.isotope({
-		filter				: '*',
-		layoutMode   		: 'masonry',
-		animationOptions	: {
-		duration			: 750,
-		easing				: 'linear'
-	   }
+	// Slide Navigation
+	jQuery(".next1").click(function(){
+	    owl1.trigger('owl.next');
 	});
 
-	// Isotope Filter
-	$filter.find('a').click(function(){
-	  var selector = $(this).attr('data-filter');
-		$container.isotope({
-		filter				: selector,
-		animationOptions	: {
-		duration			: 750,
-		easing				: 'linear',
-		queue				: false,
-	   }
-	  });
-	  return false;
+	jQuery(".prev1").click(function(){
+	    owl1.trigger('owl.prev');
+	});
+	
+    /* ----------------------------------------------------------- */
+	/*  4. PORTFOLIO SLIDER
+	/* ----------------------------------------------------------- */
+
+	jQuery('#portfolio-list').mixItUp();	
+
+	/* ----------------------------------------------------------- */
+	/*  5. COUNTER
+	/* ----------------------------------------------------------- */
+
+	jQuery('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });	  
+
+	/* ----------------------------------------------------------- */
+	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
+	/* ----------------------------------------------------------- */
+
+	var owl2 = $("#owl-carousel2"); 
+    owl2.owlCarousel({
+        items : 2, //4 items above 1024px browser width
+        itemsDesktop : [1024,2], //3 items between 1024px and 901px
+        itemsDesktopSmall : [900,2], // betweem 900px and 601px
+        itemsTablet: [600,1], //1 items between 600 and 0
+        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
+    });
+
+    // Slide Navigation
+    jQuery(".next2").click(function(){
+        owl2.trigger('owl.next');
+    });
+
+    jQuery(".prev2").click(function(){
+        owl2.trigger('owl.prev');
+    });
+	 
+
+	/* ----------------------------------------------------------- */
+	/*  7. MENU SMOOTH SCROLLING
+	/* ----------------------------------------------------------- */ 
+	
+	//MENU SCROLLING WITH ACTIVE ITEM SELECTED
+
+	// Cache selectors
+	var lastId,
+	topMenu = $(".menu-scroll"),
+	topMenuHeight = topMenu.outerHeight()+13,
+	// All list items
+	menuItems = topMenu.find("a"),
+	// Anchors corresponding to menu items
+	scrollItems = menuItems.map(function(){
+	  var item = $($(this).attr("href"));
+	  if (item.length) { return item; }
 	});
 
-	// Portfolio image animation
-	$container.find('img').adipoli({
-		'startEffect' 	: 'transparent',
-		'hoverEffect' 	: 'boxRandom',
-		'imageOpacity' 	: 0.6,
-		'animSpeed' 	: 100,
+	// Bind click handler to menu items
+	// so we can get a fancy scroll animation
+	menuItems.click(function(e){
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+15;
+	  jQuery('html, body').stop().animate({ 
+	      scrollTop: offsetTop
+	  }, 900);
+	  e.preventDefault();
 	});
 
-	// Copy categories to item classes
-	$filter.find('a').click(function() {
-		var currentOption = $(this).attr('data-filter');
-		$filter.find('a').removeClass('current');
-		$(this).addClass('current');
+	// Bind to scroll
+	jQuery(window).scroll(function(){
+	   // Get container scroll position
+	   var fromTop = $(this).scrollTop()+topMenuHeight;
+	   
+	   // Get id of current scroll item
+	   var cur = scrollItems.map(function(){
+	     if ($(this).offset().top < fromTop)
+	       return this;
+	   });
+	   // Get the id of the current element
+	   cur = cur[cur.length-1];
+	   var id = cur && cur.length ? cur[0].id : "";
+	   
+	   if (lastId !== id) {
+	       lastId = id;
+	       // Set/remove active class
+	       menuItems
+	         .parent().removeClass("active")
+	         .end().filter("[href=#"+id+"]").parent().addClass("active");
+	   }           
+	})
+    
+	/* ----------------------------------------------------------- */
+	/*  8. PRELOADER 
+	/* ----------------------------------------------------------- */ 
+
+	jQuery(window).load(function() { // makes sure the whole site is loaded
+      $('.progress').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(100).css({'overflow':'visible'});
+    })
+	  
+	/* ----------------------------------------------------------- */
+	/* 9. CALL TO ABOUT
+	/* ----------------------------------------------------------- */ 
+	
+	jQuery(".call-to-about").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        'slow');
 	});
 
-	/* ---------------------------------------------------------------------- */
-	/*	Fancybox
-	/* ---------------------------------------------------------------------- */
-	$container.find('.folio').fancybox({
-		'transitionIn'		:	'elastic',
-		'transitionOut'		:	'elastic',
-		'speedIn'			:	200,
-		'speedOut'			:	200,
-		'overlayOpacity'	:   0.6
+	/* ----------------------------------------------------------- */
+	/* 10. BOTTOM TO UP
+	/* ----------------------------------------------------------- */ 
+
+	jQuery(".up-btn").click(function() {
+    jQuery('html,body').animate({
+        scrollTop: $("#header").offset().top},
+        'slow');
 	});
 
-	/* ---------------------------------------------------------------------- */
-	/*	Contact Form
-	/* ---------------------------------------------------------------------- *
+	/* ----------------------------------------------------------- */
+	/* 11. PARALLAX HEADER
+	/* ----------------------------------------------------------- */ 
 
-	// Needed variables
-	var $contactform 	= $('#contactform'),
-		$success		= 'Your message has been sent. Thank you!';
+	jQuery('.parallax').parallax();
 
-	$contactform.submit(function(){
-		$.ajax({
-		   type: "POST",
-		   url: "php/contact.php",
-		   data: $(this).serialize(),
-		   success: function(msg)
-		   {
-				if(msg == 'SEND'){
-					response = '<div class="success">'+ $success +'</div>';
-				}
-				else{
-					response = '<div class="error">'+ msg +'</div>';
-				}
-				// Hide any previous response text
-				$(".error,.success").remove();
-				// Show response message
-				$contactform.prepend(response);
-			}
-		 });
-		return false;
+	/* ----------------------------------------------------------- */
+	/* 12. HIRE ME SCROLL
+	/* ----------------------------------------------------------- */ 
+
+	jQuery(".hire-me-btn").click(function(e) {
+		e.preventDefault();
+    jQuery('html,body').animate({
+        scrollTop: $("#footer").offset().top},
+        'slow');
 	});
-	/* ---------------------------------------------------------------------- */
-	/*	Google Maps
-	/* ---------------------------------------------------------------------- */
 
-	// Needed variables
-	var $map 				= $('#map'),
-		$tabContactClass 	= ('tab-contact'),
-		$address 			= 'Mogbazar,Dhaka-1217,Bangladesh';
-
-	$content.bind('easytabs:after', function(evt,tab,panel) {
-		if ( tab.hasClass($tabContactClass) ) {
-			$map.gMap({
-				address: $address,
-				zoom: 16,
-				markers: [
-					{ 'address' : $address }
-				]
-			});
-		}
-  	});
-
-
+	
 });
