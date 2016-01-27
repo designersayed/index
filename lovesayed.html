@@ -1,0 +1,221 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/layout.css" type="text/css"/>
+
+<script type="text/javascript">
+
+var un,pwd
+
+function my(form)
+{
+	un = form.un.value
+	pwd = form.pwd.value
+	
+	if((un == "Your name" && pwd == "Lover name") || un == "" || pwd == "")
+	{
+	
+		alert("Please input both names")
+	
+	}
+	else
+	{
+		var tips
+		var msg = Math.floor((Math.random()*(100-79))+79)
+		if(msg=="79")
+		{
+			tips="Don't sleep with a guy on the first date if you want the best shot at some kind of future with him. Yes, plenty of relationships do start that way, but you risk being put into the one time-fling category.";
+		}
+		else if(msg=="80")
+		{
+			tips="Never pretend to be into a guy's hobbies. Your true colors will come out.";
+		}
+		else if(msg=="81")
+		{
+			tips="Enjoy the moment when you're on dates. That means no discussing the future with him or worrying Is he The One? by date four. For the first month or so, your only job is to have fun.";
+		}
+		else if(msg=="82")
+		{
+			tips="Focus on your own pleasure in bed. If you're too busy showing off your skills, you'll forget to enjoy yourself (and rob him of the pleasure of driving you wild).";
+		}
+		else if(msg=="83")
+		{
+			tips="Sit or stand side by side with your man while doing things together whenever possible. Men typically feel more relaxed and intimately connected in this position than when you're directly facing each other.";
+		}
+		else if(msg=="84")
+		{
+			tips="Spend equal — if not more — time with your friends in the first few months of dating. Guys often rush into a relationship, then suddenly cry, “This is moving too fast!” You have to apply the brakes.";
+		}
+		else if(msg=="85")
+		{
+			tips="Keep your options open for at least three months before deciding to be exclusive. You need a minimum of 90 days to even begin to know what someone is really like.";
+		}
+		else if(msg=="86")
+		{
+			tips="He's not your boyfriend until he publicly calls you his girlfriend or agrees to be exclusive. End of story.";
+		}
+		else if(msg=="87")
+		{
+			tips="When you have a problem with his lifestyle, speak up before you get really angry. If you don't tell him that his partying bugs you, you'll eventually explode on him—not a smart communication technique.";
+		}	
+		else if(msg=="88")
+		{
+			tips="Jump on him instead of next to him on the couch. Being sexy and playful takes effort, but it's the glue that keeps couples together.";
+		}
+		else if(msg=="89")
+		{
+			tips="Both of you at some point will question your ability to be faithful forever. Keep it to yourself, and don't take it personally if he's having the same doubts.";
+		}
+		else if(msg=="90")
+		{
+			tips="If you wonder whether you're settling, ask yourself, Am I spending so much time saving this relationship that I've neglected the goals I had before we met? If I walked away right now, could I live with losing him? If you answer no, stick with it and re-evaluate in six months.";
+		}
+		else if(msg=="91")
+		{
+			tips="Love doesn't conquer all. Some incompatibilities just won't go away, no matter how much you care.";
+		}
+		else if(msg=="92")
+		{
+			tips="Don't compare your relationship to other people's.";
+		}
+		else if(msg=="93")
+		{
+			tips="Innocent jealousy keeps things spicy. Occasionally laugh about how you happily rebuffed a cheesy guy's advances.";
+		}
+		else if(msg=="94")
+		{
+			tips="If you do slip up and cheat, think very hard before you confess. Sometimes coming clean does more harm than good.";
+		}
+		else if(msg=="95")
+		{
+			tips="Life is long. If the timing just isn't right now, take a break.";
+		}
+		else if(msg=="96")
+		{
+			tips="Life is also short. Make a point to laugh your asses off regularly.";
+		}
+		else if(msg=="97")
+		{
+			tips="Never disclose any embarrassing moment of your partner’s life to his or her friends and laugh at it.";
+		}	
+		else if(msg=="98")
+		{
+			tips="Call your partner without reason just to say, I miss you. Thus he or she knows no matter how busy you are, you are thinking of him or her.";
+		}
+		else if(msg=="99")
+		{
+			tips="Most men are not able to converse in the way women can. They need more silence and internal time. Give him all the space and time he needs";
+		}
+		else if(msg=="100")
+		{
+			tips="Keep a love note in your partner’s lunch box, to show that inspite of your busy schedule, you still have time to care";
+		}
+		var note = un + " and " + pwd + ", your love is " + msg + " % true.\nTip:\n"
+
+		alert(note + tips)
+		
+	}	
+	
+
+}
+
+
+var image1=new Image()
+image1.src="imges/a.png"
+var image2=new Image()
+image2.src="imges/b.png"
+var image3=new Image()
+image3.src="imges/c.png"
+var image4=new Image()
+image4.src="imges/f.png"
+var image5=new Image()
+image5.src="imges/g.png"
+var image6=new Image()
+image6.src="imges/h.png"
+var image7=new Image()
+image7.src="imges/i.png"
+var image8=new Image()
+image8.src="imges/j.png"
+var image9=new Image()
+image9.src="imges/k.png"
+var image10=new Image()
+image10.src="imges/l.png"
+
+
+</script>
+
+</head>
+<body background="imges/back.png">
+<form action="" method="post">
+	<div class="col1">
+    	<center>
+    	<div class="heder">
+        <div class="logo">
+        	<font style="color:#FFFFFF; font-size:40px; font-family:'Courier New', Courier, monospace">LOVE SAYED<hr></font>
+        
+        </div>	
+        
+        </div>
+        
+        
+        </center>
+	</div>
+	<div class="col2">
+      	<center>
+    	<div class="main">
+                        <div class="d1">
+                        <img src="dilpica.png" name="slide" width="355" height="359">
+						<script type="text/javascript">
+                        					
+                        var step=1
+                        function slideit(){
+                        document.images.slide.src=eval("image"+step+".src")
+                        if(step<10)
+                        step++
+                        else
+                        step=1
+                        setTimeout("slideit()",2500)
+                        }
+                        slideit()
+                        
+                        
+                        </script>
+						
+                        </div>
+                        <div class="d2">
+                        	<div class="d2a" align="center">
+                            	<font style="color:#FFCCFF" size="12px"><h3>%</h3></font>
+                   			</div>             	
+                        </div>
+ 
+                        <div class="d3">
+                        &nbsp;&nbsp;&nbsp;<input type="text" name="un" maxlength="40" value="Your name"  onfocus="this.value=(this.value=='Your name')? '' : this.value ;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="pwd" value="Lover name" maxlength="40" size="22"  onfocus="this.value=(this.value=='Lover name')? '' : this.value ;" />
+                        
+                        </div> 
+                        
+                        <div class="d4" align="center">
+                        <input type="Submit" name="sub" value="Calculate" onclick="my(form)" style="width:220;" />
+                    <font style="color:#FFFFFF; font-size:9px;"><br><br>Tips for better results enter both First and Last name</font>
+                        </div>	
+                        
+                        <div class="d5" align="center">
+                        	<font style="color:#FFCCCC; font-size:20px;"><script>document.write(note)</script></font>
+                        </div>
+                        
+                        <div class="d6">        	
+                        	<font style="color:#FFCCCC; font-size:12px;">Also read tip of the day on the popup box</font>            
+                        </div>
+                
+          </div>        	
+        </div>
+        </center>
+    </div>
+    <div class="col3">
+    	
+    </div>
+	<footer align="center">
+     <a style="text-decoration:none" href="www.md-abu-sayed.github.io">Design By Md.Abu Sayed</a>
+    </footer>
+ </form>
+</body>
+</html>
