@@ -1,713 +1,805 @@
 <!DOCTYPE html>
-  <html>
-    <head>
+<html class="no-js" lang="en">
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
       <meta name="author" content="Abu Sayed"/>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
       <title>MD.ABU SAYED</title>
 
-       <!-- CSS  -->
-      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <!-- Font Awesome -->
-      <link href="css/font-awesome.css" rel="stylesheet"/>
-      <!-- Skill Progress Bar -->
-      <link href="css/pro-bars.css" rel="stylesheet" type="text/css" media="all" />
-      <!-- Owl Carousel -->
-      <link rel="stylesheet" href="css/owl.carousel.css"/>
-      <!-- Default Theme CSS File-->
-      <link id="switcher" href="css/themes/default-theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-      <!-- Main css File -->
-      <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      <!-- Font -->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-      <link rel="icon" type="images/jpg"href="img/sayed.jpg"/>
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-    </head>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-    <body>
-      <!-- BEGAIN PRELOADER -->
-      <div id="preloader">
-        <div class="progress">
-          <div class="indeterminate"></div>
-        </div>
+   <!-- Favicons ================================================== -->
+   <link rel="icon" type="images/jpg"href="images/profilepic.jpg"/>
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Photo Gallary</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'M MD.ABU SAYED</h1>
+            <h3>I'm a Bangladesh based <span>Programmer<span>,graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
+            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
       </div>
-      <!-- END PRELOADER -->
-      <header id="header" role="banner">
-        <div class="navbar-fixed">
-          <nav>
-            <div class="container">
-              <div class="nav-wrapper">
 
-                <!-- LOGO -->
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-                <!-- TEXT BASED LOGO -->
-                <a href="index.html" class="brand-logo">MD.ABU SAYED</a>
+   </header> <!-- Header End -->
 
-                <!-- Image Based Logo -->
-                 <!-- <a href="index.html" class="brand-logo"><img src="img/logo.jpeg" alt="logo img"></a>  -->
-                <ul class="right hide-on-med-and-down custom-nav menu-scroll">
-                  <li><a href="#about">About Me</a></li>
-                  <li><a href="#resume">Resume</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#testimonial">Testimonial</a></li>
-                 <!-- <li><a href="#blog">Blog</a></li>-->
-                  <li><a href="#footer">Contact</a></li>
-                </ul>
-                <!-- For Mobile View -->
-                <ul id="slide-out" class="side-nav menu-scroll">
-                  <li><a href="#about">About Me</a></li>
-                  <li><a href="#resume">Resume</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#testimonial">Testimonial</a></li>
-                  <li><a href="#footer">Contact</a></li>
-                </ul>
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <div class="main-wrapper">
-        <main role="main">
-          <!-- START HOME SECTION -->
-          <section id="home">
-            <div class="overlay-section">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12">
-                    <div class="home-inner">
-                      <h1 class="home-title">HI! I'm <span>MD.ABU SAYED</span></h1>
-                      <p>I'm a Bangladeshi Designer creating awesome and effective visual identities for companies of all sizes around the globe</p>
-                      <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Here Me <i class="mdi-content-send left"></i>
-                      </a>
-                      <!-- Call to About Button -->
-                      <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play</i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <!-- START ABOUT SECTION -->
-          <section id="about">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <div class="about-inner">
-                    <div class="row">
-                      <div class="col s12 m4 l3">
-                        <div class="about-inner-left">
-                          <img class="profile-img" src="img/sayed.jpg" alt="Profile Image">
-                        </div>
-                      </div>
-                      <div class="col s12 m8 l9">
-                        <div class="about-inner-right">
-                          <h3>About Me</h3>
-                          <p>I'm a Bangladeshi Designer creating awesome and effective visual identities for companies of all sizes around the globe.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here</p>
-                          <div class="personal-information col s12 m12 l6">
-                            <h3>Personal Information</h3>
-                            <ul>
-                              <li><span>Name : </span>MD.ABU SAYED </li>
-                              <li><span>Date of birth : </span>October 01, 1994</li>
-                              <li><span>Phone : </span>+8801953703822</li>
-                              <li><span>Email : </span>mdabusayed.ma143@gmail.com</li>
-                              <li><span>present address : </span>Moghbazar,Dhaka-1217.Bangladesh</li>
-                              <li><span>permanent address : </span>West Subidkhali,Mirzagonj,Patuakhali,Bangladesh</li>
-                            </ul>
-                          </div>
-                          <div class="resume-download col s12 m12 l6">
-                            <a href="#" class="waves-effect waves-light btn-large resume-btn"><i class="mdi-content-archive left"></i> Download Resume</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Start Resume -->
-          <section id="resume">
-            <!-- Start Skill -->
-            <section id="skill">
-              <div class="container">
-                <div class="skill-inner">
-                  <h2 class="title">Skills</h2>
-                  <p></p>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-                  <!-- Start skills progress bar -->
+      <div class="row">
 
-                  <div class="skill-progress-bar">
-                    <span>Html5</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-100 color-amethyst" data-pro-bar-percent="100"></div>
-                    </div>
-                    <span>css</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-90 color-amethyst" data-pro-bar-percent="90" ></div>
-                    </div>
-                    <span>Photoshop</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-80 color-amethyst" data-pro-bar-percent="80" data-pro-bar-delay="200"></div>
-                    </div>
-                    <span>Illustrator</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-70 color-amethyst" data-pro-bar-percent="70" data-pro-bar-delay="300"></div>
-                    </div>
-                    <span>Wordpress</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-60 color-amethyst" data-pro-bar-percent="60" data-pro-bar-delay="400"></div>
-                    </div>
-                    <span>jQuery</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="50" data-pro-bar-delay="500"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Start Experience -->
-            <section id="experience">
-              <div class="container">
-                <div class="experience-inner">
-                  <h2 class="title">Experience</h2>
-                  <p></p>
-                  <div id="owl-carousel" class="experience-slider row">
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/a.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">website Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Photoshop</a>
-                          <p>.....</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/b.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Website</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
+         <div class="three columns">
 
-                    <!-- Start Single Experience -->
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="Md.Abu Sayed" />
 
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/c.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Phone</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Website</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/d.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Photoshop</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Photoshop</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/e.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Photoshop</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/f.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Website</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/g.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Website</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Website</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/h.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Photoshop</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Photoshop</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">January 2013 - Present</h2>
-                          <img class="activator" src="img/i.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Designer<i class="material-icons right">more</i></span>
-                          <p><a href="#">Photoshop</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Designer<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Photoshop</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- owl navigation -->
-                  <div class="customNavigation">
-                    <a class="btn prev btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-left brand-text"></i></a>
-                    <a class="btn next btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-right brand-text"></i></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- Start Education -->
-            <section id="edcuation">
-              <div class="container">
-                <div class="education-inner">
-                  <h2 class="title">Education</h2>
-                  <p>.........</p>
-                  <div id="owl-carousel1" class="experience-slider row">
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">2013 - 2018</h2>
-                          <img class="activator" src="img/graduate-cap.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Bachelor Of Science<i class="material-icons right">more</i></span>
-                          <p><a href="#">University of Information Technology & Sciences</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Bachelor Of Science<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">University of Information Technology & Sciences</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">2010 - 2012</h2>
-                          <img class="activator" src="img/graduate-cap.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">HSC<i class="material-icons right">more</i></span>
-                          <p><a href="#">Subidkhali University Collage</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">HSC<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Subidkhali University Collage</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">2009 - 2010</h2>
-                          <img class="activator" src="img/graduate-cap.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">SSC<i class="material-icons right">more</i></span>
-                          <p><a href="#">Subidkhali R.I.High School</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">SSC<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">Subidkhali R.I.High School</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
+         </div>
 
-                    <!-- Start Single Experience -->
-                    <div class="col s12">
-                      <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                        <h2 class="experience-title">2002 - 2005</h2>
-                          <img class="activator" src="img/graduate-cap.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator reveal-title">Primary School<i class="material-icons right">more</i></span>
-                          <p><a href="#">West Subidkhali Govt.Primary School</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title reveal-title">Primary School<i class="material-icons right">close</i></span>
-                          <a href="#" class="card-subtitle">West Subidkhali Govt.Primary School</a>
-                          <p>Here is some more information about this product that is only revealed once clicked on.
-                          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- owl navigation -->
-                  <div class="customNavigation">
-                    <a class="btn prev1 btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-left brand-text"></i></a>
-                    <a class="btn next1 btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-right brand-text"></i></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </section>
-          <!-- Start Portfolio -->
-          <section id="portfolio">
-            <div class="portfolio-top">
-              <div class="container">
-                <div class="portfolio-top-inner">
-                   <h2 class="title">Portfolio</h2>
-                   <div class="controls">
-                    <button class="filter waves-effect waves-light btn" data-filter="all">All</button>
-                    <button class="filter waves-effect waves-light btn" data-filter=".html">HTMl</button>
-                    <button class="filter waves-effect waves-light btn" data-filter=".design">Design</button>
-                    <button class="filter waves-effect waves-light btn" data-filter=".fashion">Fashion</button>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="portfolio-bottom">
-              <div class="container">
-                <div class="portfolio-bottom-inner">
-                  <div id="portfolio-list">
-                    <div class="mix html" data-value="2">
-                      <a href="#">
-                        <img src="img/a.jpg" alt="img">
-                        <i class="material-icons view-icon">pageview</i>
-                      </a>
-                    </div>
-                    <div class="mix fashion" data-value="4">
-                      <a href="#">
-                        <img src="img/b.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix design" data-value="1">
-                      <a href="#">
-                        <img src="img/c.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix html" data-value="5">
-                      <a href="#">
-                        <img src="img/d.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix fashion" data-value="3">
-                      <a href="#">
-                        <img src="img/e.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix design" data-value="9">
-                      <a href="#">
-                        <img src="img/f.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix html" data-value="12">
-                      <a href="#">
-                        <img src="img/g.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix fashion" data-value="7">
-                      <a href="#">
-                        <img src="img/h.jpg" alt="img">
-                      </a>
-                    </div>
-                    <div class="mix design" data-value="6">
-                      <a href="#">
-                        <img src="img/i.jpg" alt="img">
-                      </a>
-                    </div>
+         <div class="nine columns main-col">
 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Start Facts -->
-          <section id="facts">
-            <div class="facts-overlay">
-              <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <div class="facts-inner">
-                    <div class="row">
-                      <div class="col s12 m4 l4">
-                        <div class="single-facts waves-effect waves-block waves-light">
-                          <i class="material-icons">work</i>
-                          <span class="counter">020</span>
-                          <span class="counter-text">Project Completed</span>
-                        </div>
-                      </div>
-                      <div class="col s12 m4 l4">
-                        <div class="single-facts waves-effect waves-block waves-light">
-                          <i class="material-icons">supervisor_account</i>
-                          <span class="counter">022</span>
-                          <span class="counter-text">Happy Clients</span>
-                        </div>
-                      </div>
-                      <div class="col s12 m4 l4">
-                        <div class="single-facts waves-effect waves-block waves-light">
-                          <i class="material-icons">redeem</i>
-                          <span class="counter">000</span>
-                          <span class="counter-text">Award Won</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </section>
-          <!-- Testimonial -->
-          <section id="testimonial">
-            <div class="container">
-              <div class="row">
-               <div class="col s12">
-                 <div class="testimonial-inner">
-                   <h2 class="title">Testimonial</h2>
-                   <p>.........</p>
-                    <!-- Start Testimonial Slider -->
-                    <div class="testimonial-slider-area">
-                      <div id="owl-carousel2" class="testimonial-slider row">
-                        <div class="col s12">
-                          <div class="single-testimonial">
-                            <div class="testimonial-img">
-                              <img src="img/8.jpg" alt="img">
-                            </div>
-                            <div class="testimonial-content">
-                              <h3>..........</h3>
-                              <span>Google Inc.</span>
-                              <p>"............"</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col s12">
-                          <div class="single-testimonial">
-                            <div class="testimonial-img">
-                              <img src="img/profile-img1.jpg" alt="img">
-                            </div>
-                            <div class="testimonial-content">
-                              <h3>........</h3>
-                              <span>Google Inc.</span>
-                              <p>".........."</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col s12">
-                          <div class="single-testimonial">
-                            <div class="testimonial-img">
-                              <img src="img/7.jpg" alt="img">
-                            </div>
-                            <div class="testimonial-content">
-                              <h3>''''''''''</h3>
-                              <span>Google Inc.</span>
-                              <p>"................"</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col s12">
-                          <div class="single-testimonial">
-                            <div class="testimonial-img">
-                              <img src="img/profile-img1.jpg" alt="img">
-                            </div>
-                            <div class="testimonial-content">
-                              <h3>..........</h3>
-                              <span>Google Inc.</span>
-                              <p>".............................."</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customNavigation">
-                        <a class="btn prev2 btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-left brand-text"></i></a>
-                        <a class="btn next2 btn-floating waves-effect waves-light btn-large white"><i class="mdi-navigation-chevron-right brand-text"></i></a>
-                      </div>
-                    </div>
-                 </div>
+            <h2>About Me</h2>
+
+            <p>I'm a Bangladeshi Designer creating awesome and effective visual identities for companies of all sizes around the globe.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Name : Md.Abu Sayed</span><br>
+						   <span>Date of Birth : October 01, 1994<br>
+						   <span>Mobill Noumber : +8801953703822</span><br>
+                     <span>Gmail : mdabusayed.ma143@gmail.com</span><br>
+                     <span>present address : Middle Badda,Dhaka-1217.Bangladesh</span><br>
+                     <span>permanent address : West Subidkhali,Mirzagonj,Patuakhali,Bangladesh</span>
+					   </p>
+
                </div>
-               </div>
-            </div>
-          </section>
 
-          <!-- Start Footer -->
-          <footer id="footer" role="contentinfo">
-            <!-- Start Footer Top -->
-            <div class="footer-top">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12">
-                    <div class="footer-top-inner">
-                      <h2 class="title">Contact</h2>
-                      <p>....................................</p>
-                      <div class="contact">
-                        <div class="row">
-                          <div class="col s12 m6 l6">
-                            <div class="contact-form">
-                              <form>
-                                <div class="input-field">
-                                  <input type="text" class="input-box" name="contactName" id="contact-name">
-                                  <label class="input-label" for="contact-name">Name</label>
-                                </div>
-                                <div class="input-field">
-                                  <input type="email" class="input-box" name="contactEmail" id="email">
-                                  <label class="input-label" for="email">Email</label>
-                                </div>
-                                <div class="input-field">
-                                  <input type="text" class="input-box" name="contactSubject" id="subject">
-                                  <label class="input-label" for="subject">Subject</label>
-                                </div>
-                                <div class="input-field textarea-input">
-                                  <textarea class="materialize-textarea" name="contactMessage" id="textarea1"></textarea>
-                                  <label class="input-label" for="textarea1">Message</label>
-                                </div>
-                                <button class="left waves-effect btn-flat brand-text submit-btn" type="submit">send message</button>
-                              </form>
-                            </div>
-                          </div>
-                          <div class="col s12 m6 l6">
-                            <div class="contact-map">
-                              <iframe src="https://www.google.com.bd/maps/@23.7790936,90.4255426,3a,75y,282.88h,88.1t/data=!3m6!1e1!3m4!1sncIgqVbZ3WjVZFCu7NGmGw!2e0!7i13312!8i6656!6m1!1e1" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Start Footer Bottom -->
-            <div class="footer-bottom">
-              <div class="container">
-                <div class="row">
-                  <div class="col s12">
-                    <div class="footer-inner">
-                      <!-- Bottom to Up Btn -->
-                      <button class="btn-floating btn-large up-btn"><i class="mdi-navigation-expand-less"></i></button>
-                     <p class="design-info">Design By <a href="www.md-abu-sayed.github.io">Md.Abu Sayed</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </main>
+               <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
       </div>
-      <!-- jQuery Library -->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <!-- Materialize js -->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <!-- Skill Progress Bar -->
-      <script src="js/appear.min.js" type="text/javascript"></script>
-      <script src="js/pro-bars.min.js" type="text/javascript"></script>
-      <!-- Owl slider -->
-      <script src="js/owl.carousel.min.js"></script>
-      <!-- Mixit slider  -->
-      <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-      <!-- counter -->
-      <script src="js/waypoints.min.js"></script>
-      <script src="js/jquery.counterup.min.js"></script>
 
-      <!-- Custom Js -->
-      <script src="js/custom.js"></script>
-    </body>
-  </html>
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education - -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>University of Information Technology & Sciences</h3>
+                  <p class="info">BSC Enginnering in IT <span>&bull;</span> <em class="date">April 2014</em></p>
+
+                  <p>
+                     My versity name University of Information Technology & Sciences....Continue Enginnering in Information Technology....
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Subidkhali University Collage</h3>
+                  <p class="info">HSC in Science <span>&bull;</span> <em class="date">Jan 2012</em></p>
+
+                  <p>
+                  My collage name Subidkhali University Collage.....
+                  </p>
+
+               </div>
+
+            </div>
+             <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Subidkhali R.I High School</h3>
+                  <p class="info">SSC in Science <span>&bull;</span> <em class="date">Jan 2010</em></p>
+
+                  <p>
+                  My school name Subidkhali R.I High School.....
+                  </p>
+
+               </div>
+
+            </div>
+                          <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>West Subidkhali Primary School</h3>
+                  <p class="info">PSC <span>&bull;</span> <em class="date">Jan 2005</em></p>
+
+                  <p>
+                  My school name West Subidkhali Primary School.....
+                  </p>
+
+               </div>
+
+            </div><!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Website Design</h3>
+                  <p class="info">Website Designer <span>&bull;</span> <em class="date">March 2014 - Present</em></p>
+
+                  <p>
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Continue Java & C programming</h3>
+                  <p class="info">UITS <span>&bull;</span> <em class="date">March 2014</em></p>
+
+                  <p>
+
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>Personal Skills
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+                  <li><span class="bar-expand jquery"></span><em>JAVA</em></li>
+                  <li><span class="bar-expand jquery"></span><em>C</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/coffee.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Me</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Console</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/judah.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Judah</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/into-the-light.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Me</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/farmerboy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Farmer Boy</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/girl.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Me with my Dulavay</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/origami.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Origami</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/retrocam.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Retrocam</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Coffee Cup</h4>
+			      <p>.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Console</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Judah</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Into the Light</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Farmer Boy</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Girl</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p></p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+ <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>My Photos</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/a.jpg" alt="" />
+                           </p>
+                           <cite>Me with my brother,sister & vabi</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/b.jpg" alt="" />
+                           </p>
+                           <cite>Me</cite>
+                        </blockquote>
+                     </li>
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/c.jpg" alt="" />
+                           </p>
+                           <cite>Me with my lovely daughter</cite>
+                        </blockquote>
+                     </li>
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/d.jpg" alt="" />
+                           </p>
+                           <cite>Me with my vayge</cite>
+                        </blockquote>
+                     </li>
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/e.jpg" alt="" />
+                           </p>
+                           <cite>Me with my dulavay</cite>
+                        </blockquote>
+                     </li>
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/f.jpg" alt="" />
+                           </p>
+                           <cite>Me</cite>
+                        </blockquote>
+                     </li>
+                     <li>
+                        <blockquote>
+                           <p><img class="scale-with-grid" src="images/g.jpg" alt="" />
+                           </p>
+                           <cite>Flower</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Md.Abu Sayed<br>
+						   <span>Middle Badda</span><br>
+                     <span>+8801953703822</span>
+					   </p>
+
+				   </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2015</li>
+               <li>Design by <a title="Styleshout" href="http://md-abu-sayed.github.io">Md.Abu Sayed</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
