@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1466245498 source:f:\algoritham\sheft_up\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+
