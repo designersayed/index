@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+	  <title>Assignment</title>
+	  <link href="style.css" rel="stylesheet">
+      </head>
+<body> 
+  <div class="wrapper">
+    <div>
+      <h1 class="header">Assignment Internet programming</h1>
+    </div>
+	<form id="form" action="" name="from" action="" method="post">
+	<label>
+	<span>E-mail: </span>
+	<input type="email" name="email" placeholder="name@name.com" required>
+    <span style=color:red Id="email_error"></span>
+    </label>
+    <label>
+  <span class="">Date of Birth:</span>
+  day:<input type="textbox" name="day"size="3" maxlength="2" name="" value="" id="day" class="" width="39"required>
+  <span style=color:red Id="day_error"></span>
+   Month:<input type="textbox" name="month" size="3" maxlength="2" name="" value="" id="month" class="" width="39"required>
+  <span style=color:red Id="month_error"></span>
+  year:<input type="textbox" name="year" size="4" maxlength="4" name="" value="" id="year" class="" width="39"required>
+  <span style=color:red Id="year_error"></span>
+						
+						</label>
+						
+			<label>
+  				<span class="">Education:</span>
+						<select name="education" >
+							<option value="None">-Select-</option>
+							<option value="SSC">SSC</option>
+							<option value="HSC"> HSC </option>
+							<option value="BSC" > BSC</option>							
+						</select>
+						<span style=color:red Id="e_error"></span>
+						</label>
+		  <label>		
+			<span class="">Gender:</span>
+			                    <input type="radio" name="sex"id="sex" value="male"required>Male
+								<input type="radio" name="sex" id="sex" value="female">Female<br>
+								<span style=color:red Id="gender_error"></span>
+		 </label>
+		 <label>	
+				<span class="">Nationality:</span>
+                   <input type = "text" value = ""  name="country" id="country" required>
+                     <span style=color:red Id="country_error"></span>
+		 </label>
+		 <label>
+						<span>Student ID:</span>
+						<input type="text" name="id" id="id"  value="" placeholder="Eight degit number" required>
+						<span style=color:red Id="id_error"></span>
+		 </label>
+  			<label>
+				<button name="submit" type="submit" onclick="validate()">Submit</button>
+			</label>
+</form>
+    <div>
+      <h1 class="footer">Design By Md.Abu Sayed</h1>
+    </div>
+</div>
+<script src="script.js"></script>
+      </body>
+    </html>
