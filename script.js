@@ -104,7 +104,7 @@ function checkeducation(){
 function checkcountry() 
       { 
 
-    var country = document.getElementById('country').value;
+    var country=document.from.country.value;
     var myArray = ['Bangladeshi', 'American', 'Pakistani','Indian','Canadian','Arabian','Brazilian','Afghanistan'];
     if(myArray.indexOf(country) == -1)
     {
