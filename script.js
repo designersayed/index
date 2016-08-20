@@ -1,19 +1,27 @@
 function validate(){
-		var emailerror=checkemail();
-		var day=checkday();
-		var month=checkmonth();
-		var year=checkyear();
-		var gender=checksex();
-		var e=checkeducation();
-		var n=checkcountry() ;
-		var i=checkid(document.from.id);
+		if(checkemail()){
+		if(checkday()){
+		if(checkmonth()){
+		if(checkyear()){
+		if(checkeducation()){
+		if(checksex()){
+		if(checkcountry()){
+		if(checkid()){
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+		return false;
 		}
 function checkemail(){
-	
 		var e=document.from.email.value;
-		 
-		if(e==""){
-		document.getElementById("email_error").innerHTML = "No Email Address";
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		if((e=="")||(!e.match(emailReg))){
+		document.getElementById("email_error").innerHTML = "Enter valide Email Address";
         return false;
 		}
 		else{
@@ -21,24 +29,23 @@ function checkemail(){
         return true;
 		}
 		}
-function checkday()
+function checkday(day)
 		{
 		var day=document.from.day.value;
-		if(day<1 || day>31)
+		if(isNaN(day) || day<1 || day>31)
 		{
 		document.getElementById("day_error").innerHTML = "Must be 1-31 number";
         return false;
-		}
+		} 
 		else{
 		document.getElementById("day_error").innerHTML = "";
         return true;
+		}		
 		}
-		
-		}
-function checkmonth()
+function checkmonth(month)
 		{
-		var month=document.from.month.value;
-		if(month< 1 || month>12)
+		var month = document.from.month.value;
+		if(isNaN(month) ||month< 1 || month>12)
 		{
 		document.getElementById("month_error").innerHTML = "Must be 1-12 number";
         return false;
@@ -46,14 +53,12 @@ function checkmonth()
 		else{
 		document.getElementById("month_error").innerHTML = "";
         return true;
-		}
-		
+		}		
 		}
 function checkyear()
 		{
-		var year=document.from.year.value;
-     		
-		if(year<1 || year>1996)
+		var year=document.from.year.value;     		
+		if(isNaN(year) ||year<1 || year>1996)
 		{
 		document.getElementById("year_error").innerHTML = "Must be 18 year";
         return false;
@@ -61,8 +66,7 @@ function checkyear()
 		else{
 		document.getElementById("year_error").innerHTML = "";
         return true;
-		}
-		
+		}		
 		}
 function checksex(){
 		var sex="";
@@ -99,16 +103,14 @@ function checkeducation(){
 		document.getElementById("e_error").innerHTML = "";
         return true;
 		}
-		}
-		
+		}		
 function checkcountry() 
       { 
-
     var country=document.from.country.value;
-    var myArray = ['Bangladeshi', 'American', 'Pakistani','Indian','Canadian','Arabian','Brazilian','Afghanistan'];
-    if(myArray.indexOf(country) == -1)
+    var Array = ['Bangladeshi', 'American', 'Pakistani','Indian','Canadian','Arabian','Brazilian','Afghanistan'];
+    if(Array.indexOf(country) == -1)
     {
-			document.getElementById("country_error").innerHTML = "Must be use correct country";
+		document.getElementById("country_error").innerHTML = "Must be use correct country";
         return false;
     }
     else{
@@ -116,18 +118,17 @@ function checkcountry()
         return true;
 		}
 }
-function checkid(inputtxt)
-{
-  var id = /^\d{8}$/;
-  if(inputtxt.value.match(id))
-       {
+function checkid(){	
+		var p=document.from.id.value;
+		var id = /^\d{8}$/;		 
+		if((p=="")||(!p.match(id))){
+		document.getElementById("id_error").innerHTML = "Must 8 degite number";
+        return false;
+		}
+		else{
 		document.getElementById("id_error").innerHTML = "";
         return true;
-    }
-    else{
-		document.getElementById("id_error").innerHTML = "Must be use 8 digite id number";
-        return false;
-		}     
-}	
+		}
+		}	
 		
 		
