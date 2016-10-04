@@ -79,3 +79,20 @@ h1 span{
 	color:#fff;
 }
 
+td{
+    font-size: 25px;
+	color:#FCF406;
+	font-weight:bold;
+	width:500px;
+}
+tr{
+background:#13A910;
+color:#1706FC;
+}
+th{
+    font-size: 40px;
+	color:#1706FC;
+	font-weight:bold;
+	width:500px;
+	text-align:left;
+}
