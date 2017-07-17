@@ -7,9 +7,28 @@
 <body> 
   <div class="wrapper">
     <div>
-      <h1 class="header">Assignment Internet programming</h1>
+      <h1 class="header">ISD (LAB)</h1>
     </div>
 	<form id="form" action="s.html" name="from" onsubmit="return validate();" method="post">
+	
+		<label>
+	<span>Std Name: </span>
+	<input type="name" name="" placeholder="Name" required>
+    <span style=color:red Id="email_error"></span>
+    </label>
+	
+			 <label>
+						<span>Student ID:</span>
+						<input type="text" name="id" id="id"  value="" placeholder="degit number">
+						<span style=color:red Id="id_error"></span>
+		 </label>
+		 
+		 		 <label>
+						<span>Department Name:</span>
+						<input type="text"  value="" placeholder="Department Name">
+						<span style=color:red Id=""></span>
+		 </label>
+	
 	<label>
 	<span>E-mail: </span>
 	<input type="email" name="email" placeholder="name@name.com" required>
@@ -25,33 +44,28 @@
   <span style=color:red Id="year_error"></span>
 						
 						</label>
-						
-			<label>
-  				<span class="">Education:</span>
-						<select name="education" >
-							<option value="None">-Select-</option>
-							<option value="SSC">SSC</option>
-							<option value="HSC"> HSC </option>
-							<option value="BSC" > BSC</option>							
-						</select>
-						<span style=color:red Id="e_error"></span>
-						</label>
 		  <label>		
 			<span class="">Gender:</span>
 			                    <input type="radio" name="sex"id="sex" value="male">Male
 								<input type="radio" name="sex" id="sex" value="female">Female<br>
 								<span style=color:red Id="gender_error"></span>
 		 </label>
-		 <label>	
-				<span class="">Nationality:</span>
-                   <input type = "text" value = ""  name="country" id="country" >
-                     <span style=color:red Id="country_error"></span>
+		 		 		 <label>
+						<span>User Name:</span>
+						<input type="text"  value="" placeholder="User Name">
+						<span style=color:red Id=""></span>
 		 </label>
-		 <label>
-						<span>Student ID:</span>
-						<input type="text" name="id" id="id"  value="" placeholder="Eight degit number">
-						<span style=color:red Id="id_error"></span>
+		 		 		 <label>
+						<span>Password:</span>
+						<input type="text"  value="" placeholder="Password">
+						<span style=color:red Id=""></span>
 		 </label>
+		 		 		 <label>
+						<span>Confirm Password:</span>
+						<input type="text"  value="" placeholder="Password">
+						<span style=color:red Id=""></span>
+		 </label>
+
   			<label>
 				<button name="submit" type="submit" >Submit</button>
 			</label>
